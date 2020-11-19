@@ -1,0 +1,324 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins' , sans-serif;
+}
+p{
+    font-size:0.9rem;
+    line-height:1.6;
+    font-weight: 400;
+    color:#606060;
+}
+.header{
+    width:100%;
+    height:100vh;
+    /* background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)),url('https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+     */
+    background-image: url('https://vistapointe.net/images/the-forest-1.jpg');
+    background-image: url('https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position:relative;
+    /* clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%, 0% 0%); */
+    clip-path: circle(180vh at 50% -80vh);
+    background-attachment: fixed;
+}
+.header:before{
+    content: "";
+    position:absolute;
+    top:0%;
+    bottom:0%;
+    left:0%;
+    right:0%;
+    opacity:0.2;
+    z-index:-1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #000 100%);
+}
+.nav-item a{
+    color:#fff !important;
+    font-weight:bold;
+}
+.navbar-brand{
+    color:#fff !important;
+    animation: music 1s linear infinite;
+     animation-direction: alternate;
+}
+     .navbar-brand .fas{
+        font-size: 4rem;
+    }
+
+    @keyframes music{
+        from{
+            transform: rotate(5deg);
+        }to{
+         transform: rotate(-5deg);
+        }
+    }
+    .navbar-brand:hover{
+         filter:drop-shadow(0 1.5rem 1rem rgba(255,255,255,0.5));
+    }
+
+.header-section{
+    width:100%;
+    height:inherit;
+    color:white;
+    text-align:center;
+    position:relative;
+}
+.center-div{
+    width:100%;
+    height:auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.header .navbar-brand:hover{
+   
+    color:#fff;
+}
+                /* AboutUs & Contact Buttons */
+.header-buttons a{
+    border:1px solid #fff;
+    border-radius:100px;
+    margin:0 5px;
+    padding:12px 35px;
+    outline:none;
+    color:#fff;
+    font-size:1rem;
+    font-weight:400;
+    line-height: 1.4;
+    text-align:center;
+}
+.header-buttons a:hover{
+    color:#50d1c0;
+    background:#fff;
+    text-decoration:none;
+    box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+}
+.center-div p{
+    font-size: 1.3rem;
+    padding:10px 0 20px 0;
+    /* color:#000; */
+    color:#fff;
+    text-transform: uppercase;
+}
+
+/*-------------------------------------------------- HEADER PART FULL COMPLETED --------------------------------------------------------*/
+
+/* -------------------------------------------------      GALLERY STARTED       --------------------------------------------------------*/
+    #work h3{
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: 600;
+        color: #6c757d !important;
+    }
+    .row.no-gutters [class*=col-]{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .img-wrapper{
+        overflow: hidden;
+    }
+    .img-wrapper img{
+        transition: transform .5s ease;
+    }
+    .img-wrapper img:hover{
+        transform: scale(1.5);
+        cursor: zoom-in;
+    }
+    img{
+        width:100%;
+        height:auto;
+    }
+    .container-fluid{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* -------------------------------------------------      GALLERY ENDED       --------------------------------------------------------*/
+
+
+    /* -------------------------------------------------   BLOCK CODE STARTED     -------------------------------------------------------- */
+
+  .services{
+    /* background-image: url(..//image/parallax4.jpg); */
+    /* background-image: url('https://www.worldlandtrust.org/wp-content/uploads/2017/08/plant-a-tree-banner-1024x309-1.jpg'); */
+    /* background-image: url(..//image/ngo.jpg); */
+    /* background-image: linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0)),url('https://www.worldlandtrust.org/wp-content/uploads/2017/08/plant-a-tree-banner-1024x309-1.jpg');  */
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcRIi4BUAmC1SdGA4tyaxJYmiJuvpkDaH-Ew&usqp=CAU');   */
+
+    background-image: url('https://images.unsplash.com/photo-1436262513933-a0b06755c784?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+
+    padding-top:130px;
+    padding-bottom: 130px;
+    /* max-width:100% !important; */
+    background-size: 100% 100%;
+ 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.services h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.services p{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  color:white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.services a{
+    padding: 15px 30px;
+    background: transparent;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size:13px;
+    transition: all 0.5s ease-in;
+    border: 2px solid white;
+}
+
+.services a:hover{
+    padding:15px 30px;
+    background: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    color: #333;
+    font-size: 13px;
+}
+/* -------------------------------------------------   BLOCK CODE ENDED     -------------------------------------------------------- */
+
+/* -----------------------------------------JQUERY TIMER COUNTING EFFECT STARTED ----------------------------------------------------*/
+.numbers{
+    /* background-image: url(..//image/bg-testimonials.jpg); */
+    /* background-image: url('https://trees.org/app/uploads/2020/10/IMG_8742-2-1.jpg'); */
+    background-image: url('https://teamtrees.org/img/header.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center ;
+    color: white;
+    padding-top:140px;
+    padding-bottom: 150px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.color-fff{
+    color: white;
+}
+.fs-35{
+    font-size: 70px;
+}
+.fw-700{
+    font-weight: bold;
+}
+.color-aaa{
+    text-transform: uppercase;
+    font-size:500;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: white !important;
+    letter-spacing: 2px;
+}
+.numbers .fa{
+    font-size: 70px;
+}
+/* -----------------------------------------JQUERY TIMER COUNTING EFFECT ENDED ----------------------------------------------------*/
+
+/* -----------------------------------------------------LETS TALK STARTED-----------------------------------------------------------------*/
+
+.contactus{
+    width:100%;
+    height:100vh;
+     padding:80px 0;     /*height thora kam karne ka liya */
+     position:relative;
+}
+.contactus:before{
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    /* background: linear-gradient(330deg, #518360 55%, #fff 0%); */
+    background: linear-gradient(330deg, #FEDC56 55%, #fff 0%);
+    z-index:-1;   /* contact us content or paragraph ka picha background lage uske liya */
+}
+
+.hel{
+    padding: 15px 30px;
+    background: transparent;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size:13px;
+    transition: all 0.5s ease-in;
+    border: 2px solid white;
+}
+.hel:hover{
+    padding:15px 30px;
+    background: white !important;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    color: #333;
+    font-size: 13px;
+}
+::placeholdes{
+        font-size:0.85rem;
+}
+
+@media screen and (max-width: 880px){
+  
+    .talk1 .form-group{
+        margin-right: 18%;
+    }
+    .hel{
+        margin-right: 20%;
+    }
+    
+}
+  
+@media(min-width: 1024px) and (max-width:1366px)
+{
+    .hel{
+          background: white !important;
+           color: #333;
+          font-size:23px;
+        }
+}
+                    
+@media(min-width:768px) and (max-width:1024px)
+{
+    .talk1 .form-group{
+         margin-left: 20%;
+    }
+    .hel{
+         margin-left: 20%;
+     }
+}
+                    
+                   
+/* -----------------------------------------------------LETS TALK ENDED -----------------------------------------------------------------*/
